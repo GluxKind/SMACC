@@ -1,0 +1,27 @@
+uint8 command
+
+# Possible command values
+uint8 CMD_ROSCORE = 0
+uint8 CMD_ZED = 1
+uint8 CMD_MOVE_BASE = 2
+uint8 CMD_CV = 3
+uint8 CMD_KILL = 4
+
+---
+uint8 state 
+
+# Possible feeedback values (tool states)
+uint8 STATE_UNKNOWN = 5
+uint8 STATE_INIT = 0
+uint8 STATE_CAM = 1
+uint8 STATE_MOVE = 2
+uint8 STATE_GOAL = 3
+uint8 STATE_OFF = 4
+
+---
+uint8 result
+
+# Possible result values
+uint8 RESULT_SUCCESS = 0
+uint8 RESULT_ERROR = 1
+

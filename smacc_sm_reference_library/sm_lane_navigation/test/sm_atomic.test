@@ -1,0 +1,6 @@
+<launch>
+<include file="$(find sm_lane_navigation)/launch/sm_lane_navigation.launch"/>
+    <test pkg="smacc_runtime_test" test-name="smacc_runtime_test_node" type="smacc_runtime_test_node">
+        <rosparam file="$(find sm_lane_navigation)/config/sm_lane_navigation_test.yaml"/>
+    </test>
+</launch>
